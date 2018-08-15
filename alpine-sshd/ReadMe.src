@@ -1,0 +1,5 @@
+1：构建
+docker build -t alpine-sshd:v1 .
+
+2：启动容器
+docker run -itd -p 10022:22 -e ROOT_PASSWORD="admin" alpine-sshd:v1
